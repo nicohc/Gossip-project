@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Exercice The Gossip Project
 
-Things you may want to cover:
+Bienvenue sur le site des gossips de THP !
+Avec ce site vous pourrez :
+* Poster un gossip
+* Editer un gossip
+* Supprimer un gossip
+* Et lire tous les gossips d'un coup d'oeil sur la page d'accueil !
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Merci de ne pas trop raconter de betises ;) Sinon ca va encore parler !
+Le lien :  https://thp-nico-gossip-project.herokuapp.com
