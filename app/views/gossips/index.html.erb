@@ -1,4 +1,25 @@
-<p> Hello !</p>
-
+<p> Hello ! <br> et bienvenue sur le site des Gossips de THP !</p>
 
 <p> <a href="/gossips/new">Créer un nouveau gossip</a> </p>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>L'auteur</th>
+    <th>Son gossip</th>
+  </tr>
+
+  <% @gossips.each do |gossip| %>
+  <tr>
+    <td><%= gossip.id %></td>
+    <td><%= gossip.anonymous_author %></td>
+    <td><%= gossip.content %></td>
+    <td><%= link_to "Montrer le gossip", gossip_path(gossip) %></td>
+    <td><%= link_to "Editer", edit_gossip_path(gossip) %></td>
+    <td><%= link_to 'Detruire', gossip_path(gossip),
+            method: :delete,
+            data: { confirm: 'Etes vous sûr de votre acte irréversible ?' } %></td>
+
+  </tr>
+  <% end %>
+</table>

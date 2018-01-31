@@ -5,4 +5,8 @@ Un gossip de <%= @gossip.anonymous_author %>
 <%= @gossip.content %>
 
 <br>
+<p> <%= link_to "Corriger le gossip", edit_gossip_path%></p>
+<p> <%= link_to 'Cliquer pour détruire à jamais', gossip_path(@gossip), method: :delete ,
+              data: { confirm: 'Etes vous sur ?' }%></p>
+<br>
 <p> <a href="/">Retourner à l'accueil</a> </p>
