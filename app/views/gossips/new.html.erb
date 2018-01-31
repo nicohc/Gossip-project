@@ -1,0 +1,11 @@
+<h1> Lancer un nouveau gossip</h1>
+
+<%= form_tag (gossips_path) do %>
+<%= label_tag 'anonymous_author', "Votre pseudo de délateur" %>
+<%= text_field_tag 'anonymous_author' %>
+<br>
+<%= label_tag 'content', 'La rumeur à balancer' %>
+<%= text_area_tag 'content' %>
+<br><br>
+<%= submit_tag "Lancer !"%>
+<% end %>
